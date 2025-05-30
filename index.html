@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free AI ChatBot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./public/styles.css" />
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4 animated-heading">🤖 Free ChatBot</h2>
+    <div class="form-group">
+      <input type="text" class="form-control shadow-sm" id="userInput" placeholder="Ask me anything..." />
+    </div>
+    <button class="btn btn-success btn-block mb-3" onclick="sendMessage()">Ask!</button>
+    <div id="response" class="p-3 bg-light rounded shadow-sm"></div>
+  </div>
+
+  <!-- External JS -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="./public/script.js"></script>
+</body>
+</html>
