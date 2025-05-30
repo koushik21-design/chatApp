@@ -13,13 +13,13 @@ async function sendMessage() {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer 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",
+        "Authorization": "Bearer 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",
         "HTTP-Referer": "https://www.webstylepress.com",
         "X-Title": "webstylepress",
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "deepseek/deepseek-r1:free",
+        model: "deepseek/deepseek-prover-v2:free",
         messages: [{ role: "user", content: input }]
       })
     });
