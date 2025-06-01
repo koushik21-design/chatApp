@@ -14,4 +14,5 @@ This is an interactive AI-powered chat application built using the DeepSeek API.
 •	That message is sent to the DeepSeek API using a fetch() POST request.
 •	The AI model processes the prompt and sends back a response.
 •	The app dynamically displays the user's message and the AI's reply in styled bubbles.
- 
+Preview
+ ![Image](https://github.com/user-attachments/assets/a2022fc4-4b63-4d3b-9e53-17cf4513f3ca)
