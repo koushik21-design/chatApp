@@ -14,8 +14,8 @@ async function sendMessage() {
   method: "POST",
   headers: {
     "Authorization": "Bearer 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",
-    "HTTP-Referer": "https://www.chatBotAi.com", // Optional. Site URL for rankings on openrouter.ai.
-    "X-Title": "chatBotAi", // Optional. Site title for rankings on openrouter.ai.
+    "HTTP-Referer": "https://www.wordpress.com", // Optional. Site URL for rankings on openrouter.ai.
+    "X-Title": "wordPress", // Optional. Site title for rankings on openrouter.ai.
     "Content-Type": "application/json"
   },
   body: JSON.stringify({
