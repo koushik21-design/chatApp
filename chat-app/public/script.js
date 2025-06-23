@@ -11,18 +11,23 @@ async function sendMessage() {
 
   try {
     const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": "Bearer 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",
-        "HTTP-Referer": "https://www.webstylepress.com",
-        "X-Title": "webstylepress",
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: "deepseek/deepseek-prover-v2:free",
-        messages: [{ role: "user", content: input }]
-      })
-    });
+  method: "POST",
+  headers: {
+    "Authorization": "Bearer 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",
+    "HTTP-Referer": "https://www.chatBotAi.com", // Optional. Site URL for rankings on openrouter.ai.
+    "X-Title": "chatBotAi", // Optional. Site title for rankings on openrouter.ai.
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    "model": "deepseek/deepseek-r1-distill-qwen-32b:free",
+    "messages": [
+      {
+        "role": "user",
+        "content": "input"
+      }
+    ]
+  })
+});
 
     const data = await response.json();
     const markdownText = data.choices?.[0]?.message?.content || 'No response received.';
