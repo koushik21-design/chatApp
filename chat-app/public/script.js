@@ -23,7 +23,7 @@ async function sendMessage() {
     "messages": [
       {
         "role": "user",
-        "content": input
+        "content": "input"
       }
     ]
   })
