@@ -10,7 +10,7 @@ async function sendMessage() {
   responseDiv.innerHTML = '<p class="text-muted">Thinking...</p>';
 
   try {
-    const response = await fetch('/server/', {
+    const response = await fetch('server', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ input })
